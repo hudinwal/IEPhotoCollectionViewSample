@@ -15,6 +15,8 @@
 		1BAEE9251BAC8393000BFDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAEE9231BAC8393000BFDED /* LaunchScreen.storyboard */; };
 		1BAEE9301BAC8393000BFDED /* IEPhotoCollectionViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEE92F1BAC8393000BFDED /* IEPhotoCollectionViewSampleTests.m */; };
 		1BAEE93B1BAC8394000BFDED /* IEPhotoCollectionViewSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEE93A1BAC8394000BFDED /* IEPhotoCollectionViewSampleUITests.m */; };
+		1BAEE94B1BAC83BB000BFDED /* IEPhotoCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEE94A1BAC83BB000BFDED /* IEPhotoCollectionView.m */; settings = {ASSET_TAGS = (); }; };
+		1BAEE94E1BAC83C8000BFDED /* IECacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAEE94D1BAC83C8000BFDED /* IECacher.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		1BAEE9361BAC8394000BFDED /* IEPhotoCollectionViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IEPhotoCollectionViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAEE93A1BAC8394000BFDED /* IEPhotoCollectionViewSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IEPhotoCollectionViewSampleUITests.m; sourceTree = "<group>"; };
 		1BAEE93C1BAC8394000BFDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAEE9491BAC83BB000BFDED /* IEPhotoCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEPhotoCollectionView.h; sourceTree = "<group>"; };
+		1BAEE94A1BAC83BB000BFDED /* IEPhotoCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IEPhotoCollectionView.m; sourceTree = "<group>"; };
+		1BAEE94C1BAC83C8000BFDED /* IECacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IECacher.h; sourceTree = "<group>"; };
+		1BAEE94D1BAC83C8000BFDED /* IECacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IECacher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		1BAEE9141BAC8393000BFDED /* IEPhotoCollectionViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				1BAEE9481BAC839D000BFDED /* IEPhotoCollectionView */,
 				1BAEE9181BAC8393000BFDED /* AppDelegate.h */,
 				1BAEE9191BAC8393000BFDED /* AppDelegate.m */,
 				1BAEE91B1BAC8393000BFDED /* ViewController.h */,
@@ -138,6 +145,17 @@
 				1BAEE93C1BAC8394000BFDED /* Info.plist */,
 			);
 			path = IEPhotoCollectionViewSampleUITests;
+			sourceTree = "<group>";
+		};
+		1BAEE9481BAC839D000BFDED /* IEPhotoCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1BAEE9491BAC83BB000BFDED /* IEPhotoCollectionView.h */,
+				1BAEE94A1BAC83BB000BFDED /* IEPhotoCollectionView.m */,
+				1BAEE94C1BAC83C8000BFDED /* IECacher.h */,
+				1BAEE94D1BAC83C8000BFDED /* IECacher.m */,
+			);
+			name = IEPhotoCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BAEE91D1BAC8393000BFDED /* ViewController.m in Sources */,
+				1BAEE94E1BAC83C8000BFDED /* IECacher.m in Sources */,
+				1BAEE94B1BAC83BB000BFDED /* IEPhotoCollectionView.m in Sources */,
 				1BAEE91A1BAC8393000BFDED /* AppDelegate.m in Sources */,
 				1BAEE9171BAC8393000BFDED /* main.m in Sources */,
 			);
@@ -414,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IEPhotoCollectionViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.camping.IEPhotoCollectionViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IEPhotoCollectionViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.camping.IEPhotoCollectionViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
